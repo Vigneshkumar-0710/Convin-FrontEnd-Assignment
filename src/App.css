@@ -1,38 +1,411 @@
-.App {
+
+
+.App{
+  margin: 20px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+ 
+ }
+ @font-face {
+  font-family: myFirstFont;
+  src: url(MomcakeBold-WyonA.otf);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* .Main-Heading{
+ 
+  display:flex;
+  flex-direction: column;
+  
+  
+  width:30%;
+  margin-left: 35%;
+  margin-bottom: 5%;
+  color: rgb(222, 207, 236);
+  font-size: x-large;
+  font-family: myFirstFont;
+  font-weight: 800;
+  color: rgb(215, 207, 223);
+  border: solid;
+  box-shadow: 5px 5px 20px blueviolet;
+  border-radius: 20px;
+ 
+ }
+ 
+ .Add-card{
+  
+  color: blueviolet;
+  font-weight: bolder;
+ }
+ .SAB {
+  
+  width: 270px;
+  padding: 4px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bolder;
+  opacity: .2;
+ }
+body{
+  justify-content: center;
+	align-items: center;
+	  background: #eef0f9;
+	 background-image: url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); 
+	background-size:cover ;
+}  
+ .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
   }
-}
+  *.card{
+    display: flex;
+    flex-direction: column;
+    border: solid #050505;
+    align-items: center;
+    font-weight: bolder;
+    border: aliceblue solid;
+  border-radius: 8px;
+    color: #fff;
+    font-family: myFirstFont;
+    padding: 5px;
+    border-radius: 15px;
+    /* opacity: .5; */
+    box-shadow:  5px 5px 20px rgb(163, 79, 184);
+    width: 300px;
+    height: 380px;
+  }
+  .card-name{
+   text-align: center;
+    margin: 1px;
+    padding: 9px 4px;
+  }
+  .card-button{
+    display: flex;
+    justify-content: center;
+width: 50%;
+text-align: center;
+align-items: center;
+padding: 10px;
+margin-top: 10px;
+background-color: #6665bc;
+color: #170404;
+font-weight: bold;
+text-shadow: #dfdee1;
+border: none;
+border-radius: 5px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+cursor: pointer;
+  }
+  .card-button:hover {
+   
+    background-color:blueviolet;
+    transition: .5s;
+  }
+  .option-box{
+    width: 90%;
+    padding: 7px;
+    font-size: 16px;
+    opacity: .2;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #060606;
+    border-radius: 3px;
+  }
+  ::placeholder {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    color:rgb(21, 21, 22) ;
+    opacity: 1; /* Firefox */
+  }
+  .buc {
+    display: flex;
+    flex-direction: column;
+    border: solid #050505;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    text-align: center;
+    color: #fff;
+    font-family: myFirstFont;
+    padding: 5px;
+    border-radius: 15px;
+    border: aliceblue solid;
+    border-radius: 8px;
+    /* opacity: .5; */
+    box-shadow:  5px 5px 20px rgb(163, 79, 184);
+    width: 300px;
+    height: 200px;
+  }
+  .buc-button{
+    text-align: center;
+    padding: 10px;
+margin-top: 10px;
+background-color: #6665bc;
+color: #170404;
+font-weight: bold;
+  }
+  .buc-button:hover{
+    background-color:blueviolet;
+    transition: .5s;
+  }
+  .input-box{
+    width: 90%;
+    padding: 7px;
+    font-size: 16px;
+    opacity: .2;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #060606;
+    border-radius: 3px;
+  }
+  *.bucket-details{
+    font-family: myFirstFont;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(224deg, #eaeaee33, #525355);
+    color: rgb(221, 205, 205);
+    border-radius: 10px;
+    justify-content: center;
+  }
+  .tab-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .selected-delete{
+    font-family: myFirstFont;
+    background-color: #6665bc;
+    margin: 15px;
+
+  }
+  .no-videos{
+    color: white;
+  }
+  h2 {
+    margin-top: 30px;
+  }
+  .bucket{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: 300px;
+    height: 260px;
+    background-color: #fff;
+  }
+  .buckets-tab{
+    /* border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    background-color: #081f46; */
+
+  }
+  .tab{
+    font-family: myFirstFont;
+  }
+  .Buckets{
+    display: flex;
+    flex-direction: column;
+  }
+  .bucket-align
+  {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  .bucket-card-data
+  {
+   
+    width: 218px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px blueviolet;
+    padding: 10px;
+    
+    margin:5px
+  }
+
+ 
+  .play-card{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* input[type="text"] {
+    width: 100%;
+   
+  } */
+  .card-link{
+    font-family: myFirstFont;
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #a417ef;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .card-title{
+    font-size: 20px;
+    color: blueviolet;
+    text-shadow: 1px 1px 1px#dfdee1;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+ .cards-tab{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 40px;
+ }
+ .cards-tab-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }
+  select {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .tab{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  opacity: 2;
+  border-radius: 10px;
+  color: rgb(215, 207, 223);
+  border: solid;
+  box-shadow: 5px 5px 20px blueviolet;
   }
-  to {
-    transform: rotate(360deg);
+  button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
   }
-}
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+  }
+  
+  li > h3 {
+    margin-bottom: 10px;
+  }
+  
+  li > ul {
+    padding-left: 20px;
+  }
+  
+  li > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  li > ul > li > div:first-child {
+    cursor: pointer;
+  }
+  
+  li > ul > li > div:first-child:hover {
+    text-decoration: underline;
+  }
+  
+  li > ul > li > label {
+    margin-left: 10px;
+  }
+  
+  li > ul > li > div:last-child {
+    display: flex;
+    align-items: center;
+  }
+  
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    max-height: 500px;
+    overflow: hidden;
+  }
+  
+  .modal-content > span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .modal-content > iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .played-buckets{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+  }
+  .bucket-list{
+    border: aliceblue solid;
+    
+  border-radius: 8px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 300px;
+    height: auto;
+    font-style: italic;
+    color: aliceblue;
+  }
