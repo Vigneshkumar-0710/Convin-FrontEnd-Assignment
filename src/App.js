@@ -92,7 +92,7 @@ function App() {
   return (
     <div className="App">
    
- <div className="Main-Heading">Video Card Management</div>
+ <div className="Main-Heading">Card Management</div>
  
       <div className="cards-tab">
       <div className="cards-tab-1">  
